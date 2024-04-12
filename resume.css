@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+
+body{
+    background: #574B90;
+    max-width: 800px;
+    margin: 60px auto;
+    height: 1250px;
+    padding: 20px;
+    box-shadow: 0 2px 20px, rgba(0, 0, 0, 0.2);
+}
+.header{
+    text-align: center;
+}
+.header h1{
+    margin-bottom: 10px;
+}
+pre{
+    font-family: "poppins",sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--name);
+    letter-spacing: 1px;
+
+}
+.hearder h3{
+    text-transform: uppercase;
+    text-size-adjust:15px;
+    font-weight: 500;
+}
+.img-area{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 25px auto;
+    border:10px groove rgb(10, 11, 11);
+}
+.img-area img{
+    width: 100%;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left{
+    flex:1;
+    padding: 30px;
+}
+.left p{
+    line-height: 2;
+}
+.left ul li{
+    line-height: 2;
+}
+h2{
+    background: #786fa6;
+    padding: 15px;
+    color:#ffff;
+    margin:30px 0;
+    font-size: 20px;;
+    border-radius:0 50px 50px 0;
+}
+.right{
+    flex: 1;
+    padding: 30px;
+}
+.right h3{
+    margin-bottom: 15px;
+}
+.right p{
+    line-height: 3.0;
+}
+.right ul li{
+    line-height: 2;
+}
+
+@media only screen and(min-width:768px) and (max-width:991px){
+    .container{
+        width: 95%;
+        height: auto;
+    }
+    h2{
+        font-size: 18px;
+    }
+}
+@media only screen and(max-width:600px){
+    .main{
+        flex-direction:column;
+    }
+    .left,
+    .right{
+        flex:none;
+        width: 100%;
+    }
+    .container{
+        width: 95%;
+        height: auto;
+    }
+    h2{
+        font-size: 15px;
+    }
+}
+
+.down{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+}
+.down a{
+    text-decoration: none;
+    background-color: rgb(62, 133, 133);
+    color: white;
+    padding: 5px 20px;
+    font-weight: bold;
+    border-radius: 7px;
+    text-align: center;
+    transition: 0.4s;
+}
+.down a:hover{
+    background-color: #15075a;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.250);
+}
